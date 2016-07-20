@@ -31,3 +31,13 @@ function getRGB(a){
 	p[2] = parseInt(a.substr(5,2),16);
 	document.write(p);
 }
+
+function fact(a){
+	k  = fact2(a);
+	document.write(k);
+}
+function fact2(a){
+	if(a==0 || a==1)
+		return 1;
+	return a*fact2(a-1);
+}
